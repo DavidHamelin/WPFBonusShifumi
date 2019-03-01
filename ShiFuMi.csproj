@@ -99,5 +99,13 @@
     <Resource Include="img\feuille.jpg" />
     <Resource Include="img\pierre.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="wav\fist.wav" />
+    <Content Include="wav\Highlander.wav" />
+    <Content Include="wav\page.wav" />
+    <Content Include="wav\prompt.wav" />
+    <Content Include="wav\sword.wav" />
+    <Content Include="wav\whip.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,3 +13,4 @@ C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.c
 C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.csproj.CoreCompileInputs.cache
 C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.exe
 C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.pdb
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi_Content.g.cs

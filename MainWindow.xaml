@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShiFuMi"
         mc:Ignorable="d"
-        Title="MortalShiFuMi" Height="500" Width="800" Background="Black">
+        Title="MortalShiFuMi" Height="500" Width="800" MinWidth="850" Background="Black">
     <Grid>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="ShiFuMi" VerticalAlignment="Top" Height="57" Width="200" FontSize="48" TextAlignment="Center" FontFamily="Constantia" FontWeight="Bold" Margin="296,12,296,0">
             <TextBlock.Foreground>
@@ -16,23 +16,26 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <Grid Margin="96,56,96,152" Width="600" >
+        <!--<MediaElement x:Name="MusicBG" Visibility="Hidden" Source="wav\\Highlander.wav" LoadedBehavior="Play"/>-->
+        <Button x:Name="StopMusic" Content="Stop Music" HorizontalAlignment="Right" VerticalAlignment="Top" Width="74" Margin="0,10,108,0" Click="StopMusic_Click"/>
+        <Button x:Name="PlayMusic" Content="Play Music" HorizontalAlignment="Right" VerticalAlignment="Top" Width="74" Margin="0,10,24,0" Click="PlayMusic_Click"/>
+        <Grid Margin="96,56,96,152" Width="600" MinWidth="600" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button x:Name="stone" Click="Stone_Click" Width="155" Height="200">
-                <Image Source="img\pierre.jpg" Stretch="Uniform" Height="200"/>
+                <Image x:Name="theRock" Source="img\pierre.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" Height="Auto" />
             </Button>
             <Button x:Name="leaf" Grid.Column="1" Click="Leaf_Click" Width="160" Height="200">
-                <Image Source="img\feuille.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" Height="200"/>
+                <Image x:Name="cetelem" Source="img\feuille.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" Height="Auto"/>
             </Button>
             <Button x:Name="scissors" Grid.Column="2" Click="Scissors_Click" Width="160" Height="200">
-                <Image Source="img\ciseaux.jpg" Stretch="Uniform" Height="200"/>
+                <Image x:Name="edward" Source="img\ciseaux.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" Height="Auto"/>
             </Button>
         </Grid>
-        <Button x:Name="fight" Content="FIGHT !" Height="68" Width="300" FontSize="36" Click="Fight_Click" Margin="246,324,246,28" Foreground="White" FontWeight="Bold" FontFamily="Batang" BorderBrush="{x:Null}">
+        <Button x:Name="fight" Content="FIGHT !" Height="68" Width="400" FontSize="36" Click="Fight_Click" Foreground="White" FontWeight="Bold" FontFamily="Batang" Margin="221,379,221,23">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFFFF300" Offset="0"/>
@@ -41,7 +44,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="OutputInfo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Margin="96,270,372,100" Width="324" Height="50" FontSize="16" Foreground="White" TextAlignment="Center" />
-        <TextBlock x:Name="OutputCounter" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="50" Width="256" FontSize="16" Margin="440,270,96,100" Foreground="White" TextAlignment="Center"/>
+        <TextBlock x:Name="OutputInfo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center"
+                   Margin="143,297,365,100" Width="334" Height="73" FontSize="16" Foreground="White" TextAlignment="Center" />
+        <TextBlock x:Name="OutputCounter" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center"
+                   Height="61" Width="204" FontSize="16" Margin="472,305,116,104" Foreground="White" TextAlignment="Right"/>
     </Grid>
 </Window>

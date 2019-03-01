@@ -1,0 +1,47 @@
+﻿<Window x:Class="ShiFuMi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShiFuMi"
+        mc:Ignorable="d"
+        Title="MortalShiFuMi" Height="500" Width="800" Background="Black">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="ShiFuMi" VerticalAlignment="Top" Height="57" Width="200" FontSize="48" TextAlignment="Center" FontFamily="Constantia" FontWeight="Bold" Margin="296,12,296,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFAC0000" Offset="0"/>
+                    <GradientStop Color="Yellow" Offset="1"/>
+                    <GradientStop Color="#FFFF2502" Offset="0.27"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Grid Margin="96,56,96,152" Width="600" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="stone" Click="Stone_Click" Width="155" Height="200">
+                <Image Source="img\pierre.jpg" Stretch="Uniform" Height="200"/>
+            </Button>
+            <Button x:Name="leaf" Grid.Column="1" Click="Leaf_Click" Width="160" Height="200">
+                <Image Source="img\feuille.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" Height="200"/>
+            </Button>
+            <Button x:Name="scissors" Grid.Column="2" Click="Scissors_Click" Width="160" Height="200">
+                <Image Source="img\ciseaux.jpg" Stretch="Uniform" Height="200"/>
+            </Button>
+        </Grid>
+        <Button x:Name="fight" Content="FIGHT !" Height="68" Width="300" FontSize="36" Click="Fight_Click" Margin="246,324,246,28" Foreground="White" FontWeight="Bold" FontFamily="Batang" BorderBrush="{x:Null}">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFFFF300" Offset="0"/>
+                    <GradientStop Color="Red" Offset="0.5"/>
+                    <GradientStop Color="#FF720C0C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="OutputInfo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Margin="96,270,372,100" Width="324" Height="50" FontSize="16" Foreground="White" TextAlignment="Center" />
+        <TextBlock x:Name="OutputCounter" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="50" Width="256" FontSize="16" Margin="440,270,96,100" Foreground="White" TextAlignment="Center"/>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\bin\Debug\ShiFuMi.exe.config
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\bin\Debug\ShiFuMi.exe
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\bin\Debug\ShiFuMi.pdb
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\MainWindow.g.cs
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\App.g.cs
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi_MarkupCompile.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi_MarkupCompile.lref
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\MainWindow.baml
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.g.resources
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.Properties.Resources.resources
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.exe
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\ShiFuMi\obj\Debug\ShiFuMi.pdb

@@ -22,26 +22,37 @@ namespace ShiFuMi
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Sons du jeu situé dans les ressources
         System.Media.SoundPlayer fist = new System.Media.SoundPlayer(ShiFuMi.Properties.Resources.fist);
         System.Media.SoundPlayer whip = new System.Media.SoundPlayer(ShiFuMi.Properties.Resources.whip);
         System.Media.SoundPlayer sword = new System.Media.SoundPlayer(ShiFuMi.Properties.Resources.sword);
         System.Media.SoundPlayer fightSound = new System.Media.SoundPlayer(ShiFuMi.Properties.Resources.prompt);
         System.Media.SoundPlayer GameMusic = new System.Media.SoundPlayer(ShiFuMi.Properties.Resources.Highlander);
         
-
         int randomed;
         string[] choice = new string[] { "The Rock", "Cetelem", "Edward ScissorHands" };
+        // Saisie utilisateur
         int userAnswer;
+        // nb de parties gagnées
         int win = 0;
+        // nb de parties perdues
         int lose = 0;
+        // nb de parties totales
         int counter = 0;
+        // pourcentage de parties gagnées
+        double percent;
 
         public MainWindow()
         {
             InitializeComponent();
         }
-
-        void Random()
+        // L'evenement se déclenche au chargement de la page
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            GameMusic.Play();
+        }
+        // Nombre aléatoire en 0 et 2 (3 exclu)
+        private void Random()
         {
             randomed = new Random().Next(0, 3);
         }
@@ -94,8 +105,14 @@ namespace ShiFuMi
                 OutputInfo.Text = $"Egalité avec { choice[userAnswer]} ! \nVotre adversaire avait choisi : { choice[randomed]} ! ";
             }
             counter++;
-        OutputCounter.Text = $"Victoires : {win} / Défaites :  {lose} \nNombre de parties : {counter} ";
+            OutputCounter.Text = $"Victoires : {win} / Défaites :  {lose} \nNombre de parties : {counter} ";
             Random();
+            // conversion du calcul en double puis arrondi à deux chiffres après la virgule
+            percent = Math.Round((double)win / counter * 100, 2);
+            // Text affiché en bleu
+            Percent.Foreground = Brushes.White;
+            //Affichage du pourcentage
+            Percent.Text = $"Parties Gagnées : {percent.ToString()} %";
         }
 
         private void StopMusic_Click(object sender, RoutedEventArgs e)
